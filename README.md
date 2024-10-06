@@ -6,7 +6,9 @@ This repository contains an example C program that demonstrates concurrency usin
 - [Requirements](#requirements)
 - [Installation and Compilation](#installation-and-compilation)
 - [Usage](#usage)
-- [Expected Output](#Output)
+- [Explanation](#explanation)
+- [License](#license)
+- [Expected Output](#output)
 
 
 ## Introduction
@@ -35,6 +37,20 @@ POSIX Threads (pthreads) Library: This example uses the pthread library, which i
 After compilation, you can run the program with:
 
 ```./concurrency_example```
+
+## Explanation
+
+`pthread_create`: This function is used to create new threads. Each thread runs a function (print_thread_id) in parallel.
+
+`pthread_exit`: Used to terminate a thread when it completes its work.
+
+`pthread_join`: This function blocks the main program until the specified thread finishes execution.
+
+In this example, 5 threads are created, each printing its unique ID concurrently.
+
+## License
+
+This project is open-source and available under the MIT License.
 
 ## Output:
 The program will create 5 threads, each printing a unique thread ID. The output may look like this:
